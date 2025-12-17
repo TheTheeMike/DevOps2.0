@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: test-backend
+spec:
+  selector:
+    app: test-backend
+  ports:
+    - port: 80
+      targetPort: 8000
+
